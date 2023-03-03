@@ -1,0 +1,241 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root{
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+/* class utilit*/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+/*estilizando os botões */
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+
+  text-transform: uppercase;
+  cursor: pointer;
+
+  padding:0.4rem 2.4rem;
+
+}
+.primary {
+  background: #6246EA;
+  border-radius: 0.5rem;
+
+  color: #FFFFFF;
+  transition: background 220ms;
+}
+.primary:hover{
+  background-color: #4a34b9;
+  color: white;
+}
+
+
+button, .secundary {
+  color:  #6246EA;
+  background: transparent;
+}
+/*setando as fontes*/
+input,
+select,
+button{
+  font-family: 'Roboto';
+  all: unset;
+}
+body{
+  font-size:1.6rem;
+}
+header{
+  min-height:53.2rem;
+  background-color: #F8F8FF;
+
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-content: center;
+}
+/* cirando um elemento antes e depois do conteudo (imagens top e bottom)*/
+header::before {
+  content:'';
+  background-image: url(../assets/illustra-01.svg);
+  width: 40.7rem;
+  height: 34.5rem;
+
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+header::after {
+  content:'';
+  background-image: url(../assets/illustra-02.svg);
+  width: 41.4rem;
+  height:33rem;
+
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  bottom: -1.2rem;
+}
+header .content .top {
+  text-align: center;
+
+}
+/*top*/
+header .content {
+  width: fit-content;
+
+  position: relative;
+  z-index: 1;
+}
+header p{
+  font-weight: 500;
+  line-height: 160%;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #E45858;
+}
+header h1 {
+  font-size: 4.8rem;
+  line-height: 125%;
+  color: #121214;
+  max-width: 64.7rem;
+  margin: 1.8rem auto 0;
+}
+header h1 span {
+  color: #6246EA;
+
+}
+/*formulario*/
+form {
+  margin-top: 4rem;
+  display: flex;
+  padding: 4rem;
+  gap: 2.4rem;
+  
+  background: #FFFFFF;
+  border: 0.1rem solid #EAEAEA;
+  border-radius: 1rem;
+}
+/*input*/
+input {
+  text-align: left;
+}
+
+/*select*/
+.search-field{
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+
+  background: #F4F4FF;
+  border-radius: .5rem;
+  padding: 1.2rem .8rem 1.2rem 1.4rem;
+}
+
+input, select {
+  color: #7c7c8a;
+  min-width: 29rem;
+}
+.search-field i {
+  color: #E45858;
+  font-size: 2.4rem;
+}
+
+select, 
+.select{
+  position: relative;
+}
+select{
+  z-index: 1;
+}
+
+.select i.ph-caret-down-light {
+  position: absolute;
+  right: 1rem;
+  z-index: 0;
+  color: #858793;
+}
+/*form buttom*/
+form button {
+  padding: 1.2rem 3.2rem;
+}
+
+/*main*/
+main > .content {
+  max-width: 1216px;
+  margin: 10rem auto;
+}
+section.top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.top .button-select{
+  display: flex;
+  padding: .8rem;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+}
+
+/*cards*/
+section.cards{
+  margin-top: 4rem;
+
+  display: grid;
+  gap: 3.2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.card{
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 1rem;
+  max-width: 38.4rem;
+  overflow: hidden;
+}
+
+.card .content {
+  display: grid;
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+.card h3 {
+  color: #121214;
+  font-size: 20px;
+  line-height: 140%;  
+}
+
+/* location*/
+.card .location{
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+
+  opacity:.75;
+}
+.location i {
+  color: #E45858;
+  font-size: 2.4rem;
+
+}

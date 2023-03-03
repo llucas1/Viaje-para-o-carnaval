@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- fonts importatdas-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+  <!-- importando o estilo da page-->
+  <link rel="stylesheet" href="./style/style.css">
+  <!-- importando icon-->
+  <script src="https://unpkg.com/phosphor-icons"></script>
+  <title>Escolha o melhor lugar para curtir o carnaval</title>
+</head>
+
+<body>
+  <header>
+    <div class="content">
+      <!--cabeçalho-->
+      <div class="top">
+        <p>find your block</p>
+        <h1>Encontre os <span>melhores blocos</span> de carnaval de 2023</h1>
+      </div>
+      <!--formulario de busca-->
+      <form class="search">
+
+        <!-- pesquisar lugares por nome-->
+        <div class="search-field">
+          <label class="sr-only" for="name">Pesquise por nome</label>
+          <i class="ph-magnifying-glass-light"></i>
+          <input type="text" name="name" id="filterElement" placeholder="Pesquise por nome">
+        </div>
+
+        <!-- pesquisar por cidades-->
+        <div class="search-field select">
+          <label class="sr-only" for="city">Selecione uma cidade</label>
+          <i class="ph-map-pin-light"></i>
+          <select name="city" id="city">
+            <option value="0" selected>Selecione uma cidade</option>
+            <option value="1">São Paulo</option>
+            <option value="2">Rio de Janeiro</option>
+            <option value="3">Florianópolis</option>
+            <option value="4">Salvador</option>
+          </select>
+          <i class="ph-caret-down-light"></i>
+        </div>
+        <button class="btn primary">Buscar Agora</button>
+      </form>
+    </div>
+
+  </header>
+
+  <main>
+    <div class="content">
+      <section class="top">
+        <h2>Blocos recomendados</h2>
+
+        <!-- botões-->
+        <div class="button-select">
+          <button class="btn primary">Lista</button>
+          <button class="btn secundary">Mapa</button>
+        </div>
+      </section>
+
+      <section class="cards">
+        <!-- cards-->
+        <div class="card">
+          <img src="assets/01.jpg" alt="homem com costeketas e chapeu, em uma rua festejando o carnaval">
+          <!-- text do card-->
+          <div class="content">
+            <h3>O Python do vovô não sobe mais</h3>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+
+            <div class="location">
+              <i class="ph-map-pin-light"></i>
+              São Paulo - SP
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/02.jpg" alt="imagem de itens de infeite">
+          <!-- text do card-->
+          <div class="content">
+            <h3>Todo mundo null</h3>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+
+            <div class="location">
+              <i class="ph-map-pin-light"></i>
+              Florianópolis - SC
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/03.jpg" alt="imagem com muitas pessoas fantasiadas curtindo o carnaval em uma rua">
+          <!-- text do card-->
+          <div class="content">
+            <h3>Hoje dou exception</h3>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+
+            <div class="location">
+              <i class="ph-map-pin-light"></i>
+              Curitiba - PR
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/04.jpg" alt="imagem de mulher fantasiada de indio em um desfile de carnaval">
+          <!-- text do card-->
+          <div class="content">
+            <h3>Manda Node</h3>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+
+            <div class="location">
+              <i class="ph-map-pin-light"></i>
+              Salvador - BA
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/05.png" alt="um homem e quatro mulheres fantasiado rindo em uma rua">
+          <!-- text do card-->
+          <div class="content">
+            <h3>Só no back-end</h3>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+
+            <div class="location">
+              <i class="ph-map-pin-light"></i>
+              São Paulo - SP
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/06.jpg"
+            alt="Homem Negro tocando corneta rodeado por muitas pessoas na rua divertindo no carnaval">
+          <!-- text do card-->
+          <div class="content">
+            <h3>Esse anel não é de Ruby</h3>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+
+            <div class="location">
+              <i class="ph-map-pin-light"></i>
+              São Paulo - SP
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/07.jpg" alt="Tres mulheres pousando para uma foto com
+          fantasia de carnaval sorrindo e pulando">
+          <!-- text do card-->
+          <div class="content">
+            <h3>Pimenta no C# dos outros é refresco</h3>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+
+            <div class="location">
+              <i class="ph-map-pin-light"></i>
+              Rio de Janeiro - RJ
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/08.jpg" alt="pessoas reunidas conversando e bebendo">
+          <!-- text do card-->
+          <div class="content">
+            <h3>EnCACHE aqui</h3>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+
+            <div class="location">
+              <i class="ph-map-pin-light"></i>
+              Porto Alegre - RS
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/09.jpg" alt="Mulher fantasiada de india com o rosto pintatdo sorrindo">
+          <!-- text do card-->
+          <div class="content">
+            <h3>Não valho nada mas JAVA li</h3>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+
+            <div class="location">
+              <i class="ph-map-pin-light"></i>
+              São Paulo - SP
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+
+  <script src="./js/home.js"></script>
+</body>
+
+</html>
